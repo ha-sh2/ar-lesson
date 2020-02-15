@@ -3,7 +3,7 @@
 <!-- A-Frame ライブラリの読み込み -->
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <!-- AR.js ライブラリの読み込み -->
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin:0px; overflow:hidden;'>
 <!-- こっからA-Frame -->
 <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
@@ -16,7 +16,7 @@
     <a-marker type="pattern" url="pattern-qrcode.patt">
         <a-entity>
             <!-- idを指定して画像を表示、x軸回りで-90度回転 -->
-            <a-image src="#goma" width="0.5" height="0.5" rotation="0 0 0"></a-image>
+            <a-image src="#goma" width="0.5" height="0.5" rotation="-90 0 0"></a-image>
             <!-- a-imageを内包するa-entityをy軸周りで360度回転するアニメーション -->
             <!-- dur(間隔):4000(ms), repeat(繰り返し):止めない限り無限, easing(イージング):線形(イージングしない)-->
             <a-animation attribute="rotation" to="0 360 0" dur="5000" repeat="indefinite" easing="linear"></a-animation>
