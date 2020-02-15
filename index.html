@@ -19,8 +19,9 @@
             <a-image src="#goma" width="0.5" height="0.5" rotation="-90 0 0"></a-image>
             <!-- a-imageを内包するa-entityをy軸周りで360度回転するアニメーション -->
             <!-- dur(間隔):4000(ms), repeat(繰り返し):止めない限り無限, easing(イージング):線形(イージングしない)-->
-            <a-animation attribute="rotation" to="0 360 0" dur="5000" repeat="indefinite" easing="linear"></a-animation>
+            <a-animation attribute="position" from="-0.5 0 -1" to="-0.5 0 -1" direction="alternate" dur="5000" repeat="indefinite" easing="linear"></a-animation>
         </a-entity>
+        <a-text value="ごまどうふ　です" position="0 1.3 0" alian="center"></a-text>
     </a-marker>
     <a-entity camera></a-entity>
 </a-scene>
