@@ -11,9 +11,10 @@
         <!-- 画像をプリロード -->
         <img id="goma" src="images/Goma.png">
         <img id="dojo" src="images/dojologo.png">
+    </a-assets>
+    <a-assets>
         <a-asset-item id="takumi-obj" src="images/takumi.obj"></a-asset-item>
         <a-asset-item id="takumi-mtl" src="images/takumi"></a-asset-item>
-
     </a-assets>
 
     <!-- a-markerのtypeにpatternを設定, 作ったpattファイルをurlにを指定 -->
@@ -34,7 +35,6 @@
         <a-obj-model id="takumi" src="#takumi-obj" mtl="#takumi-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
         <a-text value="I am Takumi." position="0 1.3 0" align="center"></a-text>
     </a-marker>
-
     <a-entity camera></a-entity>
 </a-scene>
 </body>
